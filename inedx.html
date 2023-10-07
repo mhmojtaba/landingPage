@@ -1,12 +1,450 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/all.min.css" />
     <title>Project</title>
   </head>
   <body>
-    test
+    <!-- header -->
+    <header>
+      <!-- navbar -->
+      <nav class="nav">
+        <i class="fa fa-bars-staggered mobile-menu icon"></i>
+
+        <i class="fa fa-shopping-cart icon"></i>
+      </nav>
+      <div class="header-bg">
+        <h1>فروشگاه</h1>
+        <h2>فروشگاه آنلاین انواع لباس مردانه</h2>
+      </div>
+      <div class="header-badge">
+        <div class="badge">
+          <img src="./assets/images/shirt.png" alt="shirt" />
+          <p>تیشرت</p>
+        </div>
+        <div class="badge">
+          <img src="./assets/images/dress.png" alt="dress" />
+          <p>پیرهن</p>
+        </div>
+        <div class="badge">
+          <img src="./assets/images/pants.png" alt="pants" />
+          <p>شلوار</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <!-- noise background -->
+
+        <div class="noise">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="100vw"
+            height="100vh"
+          >
+            <defs>
+              <filter
+                id="nnnoise-filter"
+                width="100vw"
+                height="100vh"
+                filterUnits="objectBoundingBox"
+                primitiveUnits="userSpaceOnUse"
+                color-interpolation-filters="linearRGB"
+              >
+                <feTurbulence
+                  type="fractalNoise"
+                  baseFrequency="0.102"
+                  numOctaves="4"
+                  seed="15"
+                  stitchTiles="stitch"
+                  x="0%"
+                  y="0%"
+                  width="100vw"
+                  height="100vh"
+                  result="turbulence"
+                ></feTurbulence>
+                <feSpecularLighting
+                  surfaceScale="15"
+                  specularConstant="0.75"
+                  specularExponent="20"
+                  lighting-color="#9013fe"
+                  x="0%"
+                  y="0%"
+                  width="100%"
+                  height="100%"
+                  in="turbulence"
+                  result="specularLighting"
+                >
+                  <feDistantLight azimuth="3" elevation="100"></feDistantLight>
+                </feSpecularLighting>
+              </filter>
+            </defs>
+            <rect width="100vw" height="100vh" fill="hsl(22.5,40%,98%)"></rect>
+            <rect
+              width="100vw"
+              height="100vh"
+              fill="#9013fe"
+              filter="url(#nnnoise-filter)"
+            ></rect>
+          </svg>
+        </div>
+        <!-- noise background -->
+        <div class="support">
+          <img src="./assets/images/support.gif" alt="support" />
+          <p>خدمات پشتیبانی1</p>
+          <p>تیم پشتیبانی بصورت 24 ساعته پاسخگو هستند</p>
+        </div>
+        <div class="support">
+          <img src="./assets/images/support.gif" alt="support" />
+          <p>خدمات پشتیبانی2</p>
+          <p>تیم پشتیبانی بصورت 24 ساعته پاسخگو هستند</p>
+        </div>
+        <div class="support">
+          <img src="./assets/images/support.gif" alt="support" />
+          <p>خدمات پشتیبانی3</p>
+          <p>تیم پشتیبانی بصورت 24 ساعته پاسخگو هستند</p>
+        </div>
+        <div class="support">
+          <img src="./assets/images/support.gif" alt="support" />
+          <p>خدمات پشتیبانی4</p>
+          <p>تیم پشتیبانی بصورت 24 ساعته پاسخگو هستند</p>
+        </div>
+      </section>
+      <section class="card-section product-section">
+        <div class="product-section-title">
+          <h2>پرفروش ترین ها</h2>
+          <div></div>
+        </div>
+        <div class="container">
+          <div class="card">
+            <img src="./assets/images/fashion.png" alt="fashion" />
+            <p>شلوار مردانه مدل فلان کد 10025</p>
+            <div class="card-badges">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="card-size">
+              <span>sm</span>
+              <span>ms</span>
+              <span>lg</span>
+              <span>xl</span>
+            </div>
+            <div class="price">
+              <div class="offPrice">
+                <span class="discount">20%</span>
+                <s class="off">1/200</s>
+              </div>
+              <div class="netPrice">
+                <span> قیمت :</span>
+                <span>1/000</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/images/fashion.png" alt="fashion" />
+            <p>شلوار مردانه مدل فلان کد 10025</p>
+            <div class="card-badges">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="card-size">
+              <span>sm</span>
+              <span>ms</span>
+              <span>lg</span>
+              <span>xl</span>
+            </div>
+            <div class="price">
+              <div class="offPrice">
+                <span class="discount">20%</span>
+                <s class="off">1/200</s>
+              </div>
+              <div class="netPrice">
+                <span> قیمت :</span>
+                <span>1/000</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/images/fashion.png" alt="fashion" />
+            <p>شلوار مردانه مدل فلان کد 10025</p>
+            <div class="card-badges">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="card-size">
+              <span>sm</span>
+              <span>ms</span>
+              <span>lg</span>
+              <span>xl</span>
+            </div>
+            <div class="price">
+              <div class="offPrice">
+                <span class="discount">20%</span>
+                <s class="off">1/200</s>
+              </div>
+              <div class="netPrice">
+                <span> قیمت :</span>
+                <span>1/000</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/images/fashion.png" alt="fashion" />
+            <p>شلوار مردانه مدل فلان کد 10025</p>
+            <div class="card-badges">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="card-size">
+              <span>sm</span>
+              <span>ms</span>
+              <span>lg</span>
+              <span>xl</span>
+            </div>
+            <div class="price">
+              <div class="offPrice">
+                <span class="discount">20%</span>
+                <s class="off">1/200</s>
+              </div>
+              <div class="netPrice">
+                <span> قیمت :</span>
+                <span>1/000</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/images/fashion.png" alt="fashion" />
+            <p>شلوار مردانه مدل فلان کد 10025</p>
+            <div class="card-badges">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="card-size">
+              <span>sm</span>
+              <span>ms</span>
+              <span>lg</span>
+              <span>xl</span>
+            </div>
+            <div class="price">
+              <div class="offPrice">
+                <span class="discount">20%</span>
+                <s class="off">1/200</s>
+              </div>
+              <div class="netPrice">
+                <span> قیمت :</span>
+                <span>1/000</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/images/fashion.png" alt="fashion" />
+            <p>شلوار مردانه مدل فلان کد 10025</p>
+            <div class="card-badges">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="card-size">
+              <span>sm</span>
+              <span>ms</span>
+              <span>lg</span>
+              <span>xl</span>
+            </div>
+            <div class="price">
+              <div class="offPrice">
+                <span class="discount">20%</span>
+                <s class="off">1/200</s>
+              </div>
+              <div class="netPrice">
+                <span> قیمت :</span>
+                <span>1/000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="card-section newest-product-section">
+        <div class="product-section-title">
+          <h2>جدید ترین ها</h2>
+          <div></div>
+        </div>
+        <div class="container">
+          <div class="card">
+            <img src="./assets/images/fashion.png" alt="fashion" />
+            <p>شلوار مردانه مدل فلان کد 10025</p>
+            <div class="card-badges">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="card-size">
+              <span>sm</span>
+              <span>ms</span>
+              <span>lg</span>
+              <span>xl</span>
+            </div>
+            <div class="price">
+              <div class="offPrice">
+                <span class="discount">20%</span>
+                <s class="off">1/200</s>
+              </div>
+              <div class="netPrice">
+                <span> قیمت :</span>
+                <span>1/000</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/images/fashion.png" alt="fashion" />
+            <p>شلوار مردانه مدل فلان کد 10025</p>
+            <div class="card-badges">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="card-size">
+              <span>sm</span>
+              <span>ms</span>
+              <span>lg</span>
+              <span>xl</span>
+            </div>
+            <div class="price">
+              <div class="offPrice">
+                <span class="discount">20%</span>
+                <s class="off">1/200</s>
+              </div>
+              <div class="netPrice">
+                <span> قیمت :</span>
+                <span>1/000</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/images/fashion.png" alt="fashion" />
+            <p>شلوار مردانه مدل فلان کد 10025</p>
+            <div class="card-badges">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="card-size">
+              <span>sm</span>
+              <span>ms</span>
+              <span>lg</span>
+              <span>xl</span>
+            </div>
+            <div class="price">
+              <div class="offPrice">
+                <span class="discount">20%</span>
+                <s class="off">1/200</s>
+              </div>
+              <div class="netPrice">
+                <span> قیمت :</span>
+                <span>1/000</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/images/fashion.png" alt="fashion" />
+            <p>شلوار مردانه مدل فلان کد 10025</p>
+            <div class="card-badges">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="card-size">
+              <span>sm</span>
+              <span>ms</span>
+              <span>lg</span>
+              <span>xl</span>
+            </div>
+            <div class="price">
+              <div class="offPrice">
+                <span class="discount">20%</span>
+                <s class="off">1/200</s>
+              </div>
+              <div class="netPrice">
+                <span> قیمت :</span>
+                <span>1/000</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/images/fashion.png" alt="fashion" />
+            <p>شلوار مردانه مدل فلان کد 10025</p>
+            <div class="card-badges">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="card-size">
+              <span>sm</span>
+              <span>ms</span>
+              <span>lg</span>
+              <span>xl</span>
+            </div>
+            <div class="price">
+              <div class="offPrice">
+                <span class="discount">20%</span>
+                <s class="off">1/200</s>
+              </div>
+              <div class="netPrice">
+                <span> قیمت :</span>
+                <span>1/000</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/images/fashion.png" alt="fashion" />
+            <p>شلوار مردانه مدل فلان کد 10025</p>
+            <div class="card-badges">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="card-size">
+              <span>sm</span>
+              <span>ms</span>
+              <span>lg</span>
+              <span>xl</span>
+            </div>
+            <div class="price">
+              <div class="offPrice">
+                <span class="discount">20%</span>
+                <s class="off">1/200</s>
+              </div>
+              <div class="netPrice">
+                <span> قیمت :</span>
+                <span>1/000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
