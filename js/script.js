@@ -1,6 +1,5 @@
 //
 // const mobileMenuIcon = document.querySelector(".mobile-menu-icon");
-const mobileMenu = document.querySelector(".show");
 // document
 //   .querySelector(".mobile-menu-icon")
 //   .addEventListener("click", function () {
@@ -9,6 +8,8 @@ const mobileMenu = document.querySelector(".show");
 
 // mobileMenuIcon.addEventListener("click", toggleMenu);
 
+// toggle menu in mobile screen
+const mobileMenu = document.querySelector(".show");
 function toggleMenu() {
   //   console.log("click");
   mobileMenu.classList.toggle("mobile-menu");
