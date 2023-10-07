@@ -12,9 +12,27 @@
     <header>
       <!-- navbar -->
       <nav class="nav">
-        <i class="fa fa-bars-staggered mobile-menu icon"></i>
-
+        <i
+          class="fa fa-bars-staggered mobile-menu-icon icon"
+          onclick="toggleMenu()"
+        ></i>
         <i class="fa fa-shopping-cart icon"></i>
+        <div class="menu">
+          <ul>
+            <li><a href="#">گالری</a></li>
+            <li><a href="#">راهنمای سفارش</a></li>
+            <li><a href="#">درباره ما </a></li>
+            <li><a href="#">تماس با ما</a></li>
+          </ul>
+        </div>
+        <div class="show mobile-menu">
+          <ul>
+            <li><a href="#">گالری</a></li>
+            <li><a href="#">راهنمای سفارش</a></li>
+            <li><a href="#">درباره ما </a></li>
+            <li><a href="#">تماس با ما</a></li>
+          </ul>
+        </div>
       </nav>
       <div class="header-bg">
         <h1>فروشگاه</h1>
@@ -442,7 +460,25 @@
           </div>
         </div>
       </section>
+      <section class="section-opinion">
+        <p>انتقادات و پیشنهادات</p>
+        <p>آیا راضی هسستید از خدمات سایت</p>
+        <p>نظر شما ناشناس هست</p>
+        <textarea class="section-opinion-input"></textarea>
+        <button>ثبت نظر</button>
+      </section>
     </main>
+
+    <!-- footer -->
+    <footer>
+      <p>تماس با ما</p>
+      <p>شماره تماس ک 0911111111</p>
+      <div class="social">
+        <img src="./assets/images/instagram.svg" alt="" />
+        <img src="./assets/images/telegram.svg" alt="" />
+        <img src="./assets/images/whatsapp.svg" alt="" />
+      </div>
+    </footer>
 
     <script src="js/all.min.js"></script>
     <script src="js/script.js"></script>

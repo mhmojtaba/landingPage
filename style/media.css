@@ -1,4 +1,20 @@
 @media screen and (min-width: 640px) {
+  .nav {
+    padding: 1rem;
+  }
+
+  .nav .icon {
+    display: none;
+  }
+
+  .nav .menu {
+    display: block;
+  }
+
+  .nav .show {
+    display: none;
+  }
+
   .header-bg {
     background: url(../assets/images/bg-desktop.png) no-repeat fixed;
     border-bottom: 1px solid #cecccc;
@@ -34,5 +50,9 @@
 
   .card-section .container {
     justify-content: center;
+  }
+
+  .section-opinion {
+    width: 50%;
   }
 }
